@@ -72,6 +72,7 @@ a {
 }
 
 .nav-links a {
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -84,6 +85,7 @@ a {
 }
 
 .issue-tag {
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -109,6 +111,7 @@ a {
 }
 
 .spine-label {
+  font-family: var(--font-sans);
   font-size: 9px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -135,6 +138,7 @@ a {
 }
 
 .stance {
+  font-family: var(--font-sans);
   font-size: 8px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -146,6 +150,7 @@ a {
 .s-pes { color: #c97a45; }
 
 .spine-book {
+  font-family: var(--font-sans);
   font-size: 12px;
   line-height: 1.65;
   color: #c8b8a0;
@@ -156,6 +161,7 @@ a {
 }
 
 .spine-issue {
+  font-family: var(--font-sans);
   font-size: 9px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -194,6 +200,7 @@ a {
 }
 
 .cover-tag {
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -281,6 +288,7 @@ a {
 }
 
 .col-tag {
+  font-family: var(--font-sans);
   font-size: 9px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -381,6 +389,7 @@ a {
 }
 
 .footer-note {
+  font-family: var(--font-sans);
   font-size: 10px;
   color: #b0a090;
   letter-spacing: 0.1em;
@@ -394,6 +403,7 @@ a {
 }
 
 .article-kicker {
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;

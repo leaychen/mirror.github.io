@@ -159,10 +159,28 @@ a {
 }
 
 .spine-book {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.book-title {
   font-family: var(--font-sans);
   font-size: 12px;
-  line-height: 1.65;
+  line-height: 1.5;
   color: #c8b8a0;
+  transition: color 0.15s ease;
+}
+
+.book-title:hover {
+  color: #e8d8c0;
+}
+
+.book-author {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  line-height: 1.4;
+  color: #a09080;
 }
 
 .spine-divider {
@@ -1146,4 +1164,61 @@ a {
   .fragment-tile-title {
     font-size: 20px;
   }
+}
+
+.issue-spectrum {
+  padding: 28px 0 34px;
+  border-top: 1px solid #d8cec2;
+  border-bottom: 1px solid #d8cec2;
+  margin-bottom: 30px;
+}
+
+.spectrum-label {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #b0a090;
+  margin-bottom: 16px;
+}
+
+.spectrum-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.spectrum-item {
+  padding-right: 0;
+  text-align: left;
+}
+
+.spectrum-stance {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.spectrum-book {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.issue-spectrum .book-title {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #7a6a58;
+  transition: color 0.15s ease;
+}
+
+.issue-spectrum .book-title:hover {
+  color: var(--accent);
+}
+
+.issue-spectrum .book-author {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #a09080;
+  padding-left: 2ch;
 }

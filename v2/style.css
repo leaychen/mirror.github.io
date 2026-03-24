@@ -767,13 +767,14 @@ a {
 }
 
 .tag {
-  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.08em;
-  color: #9a8a78;
+  text-transform: uppercase;
+  color: #7a6a5a;
   border: 1px solid #d8cec2;
-  padding: 4px 8px;
-  border-radius: 999px;
+  padding: 3px 6px;
+  border-radius: 0;
+  background: transparent;
 }
 
 .issue-row-right {

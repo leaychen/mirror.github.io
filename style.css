@@ -129,7 +129,13 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto;
 }
 
-.hero-inner { max-width: 680px; }
+.hero-inner { 
+  max-width: 680px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .eyebrow {
   font-family: var(--font-sans);

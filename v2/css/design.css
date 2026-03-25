@@ -42,17 +42,17 @@
   background: #d8cec2;
 }
 
-/* lead section */
 .design-lead {
-  margin-bottom: 8px;
+  padding: 8px 0 34px;
 }
 
 .design-lead-card {
   display: block;
-  padding: 30px 0 36px;
+  max-width: 760px;
   text-decoration: none;
   color: inherit;
   transition: background 0.15s ease, padding-left 0.15s ease;
+  padding: 18px 0;
 }
 
 .design-lead-card:hover {
@@ -70,28 +70,23 @@
 
 .design-lead-title {
   font-family: 'Playfair Display', serif;
-  font-size: 34px;
-  line-height: 1.18;
+  font-size: 42px;
+  line-height: 1.1;
   margin-bottom: 14px;
 }
 
 .design-lead-excerpt {
-  max-width: 680px;
-  font-size: 15px;
-  line-height: 1.9;
+  max-width: 640px;
+  font-size: 16px;
+  line-height: 1.95;
   color: #6f6258;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .design-lead-meta {
-  font-size: 11px;
-  letter-spacing: 0.12em;
+  font-size: 12px;
   color: #9a8a78;
-}
-
-/* grid section */
-.design-grid-section {
-  margin-bottom: 8px;
+  letter-spacing: 0.08em;
 }
 
 .design-section-label {
@@ -102,38 +97,44 @@
   margin-bottom: 18px;
 }
 
+.design-grid-section {
+  padding: 4px 0 34px;
+}
+
 .design-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  border-top: 1px solid #ddd6ca;
 }
 
 .design-card {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  background: rgba(0, 0, 0, 0.02);
-  border: 1px solid #e8e0d6;
+  display: block;
   text-decoration: none;
   color: inherit;
-  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+  padding: 24px 22px 28px;
+  border-right: 1px solid #ddd6ca;
+  min-height: 250px;
+  transition: background 0.15s ease;
+}
+
+.design-card:last-child {
+  border-right: none;
 }
 
 .design-card:hover {
-  background: rgba(0, 0, 0, 0.04);
-  border-color: #d8cec2;
-  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .design-card-top {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 16px;
+  gap: 10px;
+  margin-bottom: 18px;
 }
 
 .design-card-tag {
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
@@ -146,35 +147,34 @@
 
 .design-card-title {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  line-height: 1.35;
+  font-size: 24px;
+  line-height: 1.22;
   margin-bottom: 12px;
 }
 
 .design-card-text {
   font-size: 13px;
-  line-height: 1.75;
+  line-height: 1.9;
   color: #7a6a5a;
 }
 
-/* archive section */
 .design-archive {
-  padding-top: 8px;
+  padding-top: 4px;
 }
 
 .design-archive-list {
-  width: 100%;
+  border-top: 1px solid #ddd6ca;
 }
 
 .design-archive-row {
   display: grid;
-  grid-template-columns: 120px 1fr 40px;
+  grid-template-columns: 140px 1fr 24px;
   gap: 20px;
   align-items: start;
   padding: 24px 0;
-  border-top: 1px solid #ddd6ca;
   text-decoration: none;
   color: inherit;
+  border-bottom: 1px solid #ddd6ca;
   transition: background 0.15s ease, padding-left 0.15s ease;
 }
 
@@ -188,27 +188,27 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #b0a090;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 .design-archive-title {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  line-height: 1.25;
+  font-size: 24px;
+  line-height: 1.2;
   margin-bottom: 8px;
 }
 
 .design-archive-excerpt {
   font-size: 13px;
-  line-height: 1.75;
+  line-height: 1.8;
   color: #7a6a5a;
 }
 
 .design-archive-arrow {
   font-size: 14px;
   color: #c8bfb0;
-  padding-top: 4px;
   transition: transform 0.15s ease, color 0.15s ease;
+  padding-top: 4px;
 }
 
 .design-archive-row:hover .design-archive-arrow {
@@ -216,30 +216,32 @@
   transform: translateX(4px);
 }
 
-/* responsive */
 @media (max-width: 900px) {
-  .design-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .design-card {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 768px) {
   .design-title {
-    font-size: 34px;
+    font-size: 36px;
   }
 
   .design-lead-title {
-    font-size: 26px;
+    font-size: 32px;
+  }
+
+  .design-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .design-card {
+    border-right: none;
+    border-bottom: 1px solid #ddd6ca;
+    min-height: auto;
+  }
+
+  .design-card:last-child {
+    border-bottom: none;
   }
 
   .design-archive-row {
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 10px;
   }
 
   .design-archive-arrow {

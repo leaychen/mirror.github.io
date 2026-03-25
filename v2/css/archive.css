@@ -171,6 +171,130 @@
   color: #b8ada1 !important;
 }
 
+/* Spectrum Archive Section */
+.spectrum-archive {
+  padding-top: 48px;
+}
+
+.spectrum-archive-header {
+  padding-bottom: 36px;
+}
+
+.spectrum-archive-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.spectrum-archive-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.spectrum-archive-deck {
+  max-width: 560px;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #7a6a5a;
+}
+
+.spectrum-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.spectrum-issue {
+  padding: 24px 0;
+  border-top: 1px solid #ddd6ca;
+}
+
+.spectrum-issue-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.spectrum-issue-num {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9a8a78;
+}
+
+.spectrum-issue-theme {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--text);
+}
+
+.spectrum-books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.spectrum-book-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.spectrum-stance {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.s-opt { color: #6aaa38; }
+.s-neu { color: #7a6a58; }
+.s-pes { color: #c97a45; }
+
+.spectrum-book-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.spectrum-book-link:hover {
+  opacity: 0.7;
+}
+
+.spectrum-book-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.spectrum-book-author {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: #8f8071;
+}
+
+.spectrum-empty {
+  font-size: 13px;
+  color: #b0a090;
+  font-style: italic;
+}
+
+.spectrum-issue.muted .spectrum-books {
+  opacity: 0.6;
+}
+
 /* responsive */
 @media (max-width: 760px) {
   .archive-shell {
@@ -204,5 +328,23 @@
 
   .issue-row-sub {
     font-size: 13px;
+  }
+
+  .spectrum-archive-title {
+    font-size: 28px;
+  }
+
+  .spectrum-books {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .spectrum-book-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee8e0;
+  }
+
+  .spectrum-book-item:last-child {
+    border-bottom: none;
   }
 }

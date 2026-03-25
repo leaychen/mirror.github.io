@@ -53,7 +53,8 @@
   text-transform: uppercase;
   color: #a59688;
   padding-bottom: 16px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d8cec2;
 }
 
 .article-body p {

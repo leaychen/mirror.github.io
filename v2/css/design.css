@@ -105,6 +105,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid #ddd6ca;
+  border-bottom: 1px solid #ddd6ca;
 }
 
 .design-card {
@@ -119,6 +120,14 @@
 
 .design-card:last-child {
   border-right: none;
+}
+
+.design-card:nth-child(3n) {
+  border-right: none;
+}
+
+.design-card:nth-child(n+4) {
+  border-top: 1px solid #ddd6ca;
 }
 
 .design-card:hover {
@@ -156,6 +165,23 @@
   font-size: 13px;
   line-height: 1.9;
   color: #7a6a5a;
+}
+
+.design-grid-more {
+  text-align: right;
+  padding: 20px 0;
+  border-top: 1px solid #ddd6ca;
+}
+
+.design-more-link {
+  font-size: 13px;
+  color: #9a8a78;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.design-more-link:hover {
+  color: var(--accent);
 }
 
 .design-archive {
@@ -231,6 +257,14 @@
 
   .design-card:nth-child(2n) {
     border-right: none;
+  }
+
+  .design-card:nth-child(3n) {
+    border-right: 1px solid #ddd6ca;
+  }
+
+  .design-card:nth-child(n+3) {
+    border-top: 1px solid #ddd6ca;
   }
 
   .design-card {

@@ -226,7 +226,11 @@
   }
 
   .design-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .design-card:nth-child(2n) {
+    border-right: none;
   }
 
   .design-card {

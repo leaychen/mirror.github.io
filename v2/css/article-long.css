@@ -105,7 +105,7 @@
 }
 
 .citation-list li a {
-  color: var(--accent);
+  color: #9a7858;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.15s ease;

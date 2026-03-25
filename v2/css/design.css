@@ -1,0 +1,248 @@
+/* design page */
+.design-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.design-header {
+  padding-bottom: 28px;
+}
+
+.design-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.design-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  line-height: 1.14;
+  margin-bottom: 14px;
+}
+
+.design-deck {
+  max-width: 620px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #7a6a5a;
+}
+
+.design-rule {
+  width: 100%;
+  height: 1px;
+  background: var(--line);
+  margin-bottom: 30px;
+}
+
+.design-rule.soft {
+  background: #d8cec2;
+}
+
+/* lead section */
+.design-lead {
+  margin-bottom: 8px;
+}
+
+.design-lead-card {
+  display: block;
+  padding: 30px 0 36px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease, padding-left 0.15s ease;
+}
+
+.design-lead-card:hover {
+  background: rgba(0, 0, 0, 0.02);
+  padding-left: 8px;
+}
+
+.design-lead-kicker {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.design-lead-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  line-height: 1.18;
+  margin-bottom: 14px;
+}
+
+.design-lead-excerpt {
+  max-width: 680px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #6f6258;
+  margin-bottom: 16px;
+}
+
+.design-lead-meta {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #9a8a78;
+}
+
+/* grid section */
+.design-grid-section {
+  margin-bottom: 8px;
+}
+
+.design-section-label {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #b0a090;
+  margin-bottom: 18px;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.design-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid #e8e0d6;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.design-card:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: #d8cec2;
+  transform: translateY(-2px);
+}
+
+.design-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.design-card-tag {
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.design-card-no {
+  font-size: 10px;
+  color: #b0a090;
+}
+
+.design-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+.design-card-text {
+  font-size: 13px;
+  line-height: 1.75;
+  color: #7a6a5a;
+}
+
+/* archive section */
+.design-archive {
+  padding-top: 8px;
+}
+
+.design-archive-list {
+  width: 100%;
+}
+
+.design-archive-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 40px;
+  gap: 20px;
+  align-items: start;
+  padding: 24px 0;
+  border-top: 1px solid #ddd6ca;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease, padding-left 0.15s ease;
+}
+
+.design-archive-row:hover {
+  background: rgba(0, 0, 0, 0.02);
+  padding-left: 8px;
+}
+
+.design-archive-meta {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b0a090;
+  padding-top: 2px;
+}
+
+.design-archive-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.design-archive-excerpt {
+  font-size: 13px;
+  line-height: 1.75;
+  color: #7a6a5a;
+}
+
+.design-archive-arrow {
+  font-size: 14px;
+  color: #c8bfb0;
+  padding-top: 4px;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.design-archive-row:hover .design-archive-arrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .design-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .design-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .design-title {
+    font-size: 34px;
+  }
+
+  .design-lead-title {
+    font-size: 26px;
+  }
+
+  .design-archive-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .design-archive-arrow {
+    display: none;
+  }
+}

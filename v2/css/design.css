@@ -257,17 +257,17 @@
   }
 
   .design-card:nth-child(3n) {
-    border-right: 1px solid #ddd6ca;
+    border-right: 0.5px solid #e8e4dc;
   }
 
   .design-card {
-    border-right: none;
-    border-bottom: 1px solid #ddd6ca;
+    border-right: 0.5px solid #e8e4dc;
+    border-bottom: 0.5px solid #e8e4dc;
     min-height: auto;
   }
 
-  .design-card:last-child {
-    border-bottom: none;
+  .design-card:nth-child(2n) {
+    border-right: none;
   }
 
   .design-archive-row {
@@ -277,5 +277,21 @@
 
   .design-archive-arrow {
     display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .design-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .design-card {
+    border-right: none;
+    border-bottom: 0.5px solid #e8e4dc;
+  }
+
+  .design-card:nth-child(2n),
+  .design-card:nth-child(3n) {
+    border-right: none;
   }
 }

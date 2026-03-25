@@ -26,7 +26,6 @@
   line-height: 1.08;
   color: var(--text);
   margin-bottom: 16px;
-  max-width: 12ch;
 }
 
 .article-title em {
@@ -128,7 +127,6 @@
 
   .article-title {
     font-size: 34px;
-    max-width: none;
   }
 
   .article-deck {

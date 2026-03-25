@@ -118,7 +118,7 @@
   text-decoration: none;
   color: inherit;
   padding: 24px 22px 28px;
-  border-right: 1px solid #ddd6ca;
+  border-right: 0.5px solid #e8e4dc;
   border-bottom: 0.5px solid #e8e4dc;
   min-height: 250px;
   transition: background 0.15s ease;

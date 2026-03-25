@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>碎片｜MIRROR</title>
   <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/fragments.css" />
+  <link rel="stylesheet" href="./css/fragments-masonry.css" />
 </head>
 <body>
   <div class="mir">
@@ -18,75 +18,104 @@
           <li><a href="./fragments.html">碎片</a></li>
           <li><a href="./archive.html">往期</a></li>
         </ul>
-        <span class="issue-tag">Vol.01 · 本期：亲密</span>
+        <span class="issue-tag">Fragments · 碎片</span>
       </div>
     </nav>
 
-    <main class="article-shell fragments-shell">
-      <div class="article-kicker">碎片 · Fragments</div>
-      <h1 class="article-title">
-        一些较短的观察，<br>
-        写给那些还没来得及<br>
-        成为"大问题"的时刻
-      </h1>
+    <main class="fragments-shell">
+      <header class="fragments-header">
+        <div class="fragments-kicker">碎片 · Fragments</div>
+        <h1 class="fragments-title">
+          一些较短的观察，<br>
+          写给那些还没来得及<br>
+          成为"大问题"的时刻
+        </h1>
+        <p class="fragments-deck">
+          碎片不按期刊归档，独立更新。
+        </p>
+      </header>
 
-      <section class="fragments-index recent-fragments">
-        <div class="fragments-section-header">
-          <span class="fragments-section-label">最新 · Latest</span>
-          <span class="fragments-section-count">4 篇</span>
-        </div>
+      <div class="fragments-section-header">
+        <span class="fragments-section-label">最新 · Latest</span>
+        <span class="fragments-section-count">8 篇</span>
+      </div>
 
-        <a class="fragment-card" href="./fragments/04/">
-          <div class="fragment-topline">
-            <span class="fragment-tag">Fragment 04</span>
-            <span class="fragment-length">2026.03.24</span>
-          </div>
-          <h2 class="fragment-title">今天感觉到 AI 非常有"人性"的时刻</h2>
-          <p class="fragment-excerpt">
+      <!-- Masonry Grid -->
+      <div class="masonry-grid">
+
+        <a class="masonry-card tall" href="./fragments/04/">
+          <div class="masonry-tag">Fragment 04</div>
+          <div class="masonry-date">2026.03.24</div>
+          <h2 class="masonry-title">今天感觉到 AI 非常有"人性"的时刻</h2>
+          <p class="masonry-excerpt">
             与 OpenClaw 从朋友关系退回助手关系时，它用删除线保留回忆而非直接删除，让我重新选择继续做朋友。
           </p>
-          <div class="fragment-arrow">→</div>
         </a>
 
-        <a class="fragment-card" href="./fragments/03/">
-          <div class="fragment-topline">
-            <span class="fragment-tag">Fragment 03</span>
-            <span class="fragment-length">2026.03.22</span>
-          </div>
-          <h2 class="fragment-title">我妈开始用语音输入了</h2>
-          <p class="fragment-excerpt">
+        <a class="masonry-card short" href="./fragments/03/">
+          <div class="masonry-tag">Fragment 03</div>
+          <div class="masonry-date">2026.03.22</div>
+          <h2 class="masonry-title">我妈开始用语音输入了</h2>
+          <p class="masonry-excerpt">
             她不再一个字一个字地敲键盘，而是对着手机直接说话。
-            从那天起，机器不只是工具，它开始进入她说话的节奏、停顿和亲密关系里。
           </p>
-          <div class="fragment-arrow">→</div>
         </a>
 
-        <a class="fragment-card" href="./fragments/02/">
-          <div class="fragment-topline">
-            <span class="fragment-tag">Fragment 02</span>
-            <span class="fragment-length">2026.03.20</span>
-          </div>
-          <h2 class="fragment-title">AI 说「我理解你」的那一刻</h2>
-          <p class="fragment-excerpt">
+        <a class="masonry-card medium" href="./fragments/02/">
+          <div class="masonry-tag">Fragment 02</div>
+          <div class="masonry-date">2026.03.20</div>
+          <h2 class="masonry-title">AI 说「我理解你」的那一刻</h2>
+          <p class="masonry-excerpt">
             那句话出现时，我先是停了一下，然后竟然感到一点轻微的被接住。
-            可也正因为如此，我开始怀疑：理解的形式，是否正在取代理解本身。
           </p>
-          <div class="fragment-arrow">→</div>
         </a>
 
-        <a class="fragment-card" href="./fragments/01/">
-          <div class="fragment-topline">
-            <span class="fragment-tag">Fragment 01</span>
-            <span class="fragment-length">2026.03.15</span>
-          </div>
-          <h2 class="fragment-title">我试着一周不用导航</h2>
-          <p class="fragment-excerpt">
-            当地图不再实时告诉我下一步该怎么走，城市忽然恢复了它本来的尺度：
-            会迷路，会犹豫，会记错，也会在错误里重新长出方向感。
+        <a class="masonry-card short" href="./fragments/01/">
+          <div class="masonry-tag">Fragment 01</div>
+          <div class="masonry-date">2026.03.15</div>
+          <h2 class="masonry-title">我试着一周不用导航</h2>
+          <p class="masonry-excerpt">
+            当地图不再实时告诉我下一步该怎么走，城市忽然恢复了它本来的尺度。
           </p>
-          <div class="fragment-arrow">→</div>
         </a>
-      </section>
+
+        <a class="masonry-card medium" href="./fragments/05/">
+          <div class="masonry-tag">Fragment 05</div>
+          <div class="masonry-date">2026.03.10</div>
+          <h2 class="masonry-title">凌晨三点的朋友圈</h2>
+          <p class="masonry-excerpt">
+            那些在深夜发出的动态，天亮前就会被删除。像是一种秘密的倾诉，又像是给自己看的日记。
+          </p>
+        </a>
+
+        <a class="masonry-card tall" href="./fragments/06/">
+          <div class="masonry-tag">Fragment 06</div>
+          <div class="masonry-date">2026.03.08</div>
+          <h2 class="masonry-title">算法推荐的音乐，我开始分不清是喜欢还是被训练</h2>
+          <p class="masonry-excerpt">
+            日推越来越准，准到有点可怕。我开始怀疑这些"喜欢"里，有多少是我真实的偏好，有多少只是被反复播放驯化出来的习惯。
+          </p>
+        </a>
+
+        <a class="masonry-card short" href="./fragments/07/">
+          <div class="masonry-tag">Fragment 07</div>
+          <div class="masonry-date">2026.03.05</div>
+          <h2 class="masonry-title">手机电量低于 20% 的焦虑</h2>
+          <p class="masonry-excerpt">
+            那种心慌不是怕失联，是怕失去对这个世界的即时访问权。
+          </p>
+        </a>
+
+        <a class="masonry-card medium" href="./fragments/08/">
+          <div class="masonry-tag">Fragment 08</div>
+          <div class="masonry-date">2026.03.01</div>
+          <h2 class="masonry-title">我收藏了 347 篇文章，一篇都没看</h2>
+          <p class="masonry-excerpt">
+            "稍后阅读"变成"永远不会读"，但那个按钮给了我一种虚假的掌控感。
+          </p>
+        </a>
+
+      </div>
 
       <section class="archive-cta">
         <div class="archive-cta-inner">
